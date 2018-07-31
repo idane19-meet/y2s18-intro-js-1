@@ -10,7 +10,10 @@
 
     <script>
     	
-    	Array a = sort(prompt("Enter 3 things you are excited about meet(separated by a comma and a space):"));
+    	var a = prompt("Enter 3 things you are excited about meet(separated by a comma and a space):");
+    	a = a.split(", ");
+    	a = a.sort();
+    	document.write(a.join(", "));
     </script>
 </body>
 
