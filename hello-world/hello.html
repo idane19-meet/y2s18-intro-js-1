@@ -10,7 +10,11 @@
     <h1>A JavaScript Hello, World!</h1>
 
     <script>
-// your code goes here
+    	var birthYear = parseInt(prompt("In which year have you born?"));
+    	var luckyNum = parseInt(prompt("What's your lucky number?"));
+    	var favFruit = prompt("What's your favorite fruit?");
+    	var favSubject = prompt("What's your favorite subject?");
+    	document.write((birthYear%luckyNum) + "<br>" + (birthYear + luckyNum) + "<br>" + (favFruit + birthYear + luckyNum) + "<br>" + (birthYear + luckyNum + favSubject));
     </script>
 </body>
 
