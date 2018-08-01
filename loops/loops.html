@@ -13,8 +13,27 @@
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
-
+alert("Welcome to the guessing game!");
+var numGuesses = 0;
 var randomInt = getRandomInt(1, 100);
+while(randomInt != num)
+{
+	var num = prompt("Please enter a number:");
+	if(num > randomInt)
+	{
+		 alert("Your guess is to high!");
+	}
+	else if(num < randomInt)
+	{
+		alert("Your guess is to low!");
+	}
+	else
+	{
+		break;
+	}
+	numGuesses++;
+}
+alert("congratulation! The number was " + randomInt + ", you only needed " + (++numGuesses) + " guesses!");
 /* END STARTING CODE */
 
 // your code goes under here

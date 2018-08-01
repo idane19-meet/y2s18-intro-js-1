@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Functions</title>
+</head>
+
+<body>
+    <h1>This is TicTacToe</h1>
+
+    <script>
+function printBoard(table)
+{
+	var i = 0;
+	var j = 0;
+	for(i = 0;i < 3;i++)
+	{
+		for(j = 0;j < 3;j++)
+		{
+			alert(table[i][j]);
+		}
+		alert("<br>");
+	}
+}
+function initboard()
+{
+	var table = [[]];
+	var i = 0;
+	var j = 0;
+	for(i = 0;i < 3;i++)
+	{
+		for(j = 0;j < 3;j++)
+		{
+			table[i][j] = "-";
+		}
+	}
+	return table;
+}
+function markTable()
+{
+	
+}
+var table = initboard();
+while(checkWin(table))
+{
+	var pick = prompt("Enter a pos you want to mark(1-9):");
+	markTable();
+
+}																				
+
+    </script>
+}
+}
+</body>
+
+</html>
